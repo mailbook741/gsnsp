@@ -434,7 +434,10 @@ See https://github.com/adobe-type-tools/cmap-resources
 <script src="pdf-flip.js?v=1.1.1.1.1.1"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        PdfFlip.init();
+        PdfFlip.init({
+           pdfUrl: 'nsp.pdf',
+           tocUrl: 'toc.json'
+        });
     });
 </script>
 
