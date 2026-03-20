@@ -434,11 +434,13 @@ See https://github.com/adobe-type-tools/cmap-resources
 <script src="pdf-flip.js?v=1.1.1.1.1.12"></script>
 <script type="text/javascript">
         $(document).ready(function () {
-            PdfFlip.init({
-                pdfUrl: 'nsp.pdf',
-                tocUrl: 'toc.json?v=3',
-                disableOutline: true
-            });
+            setTimeout(function() {
+                PdfFlip.init({
+                    pdfUrl: 'nsp.pdf',
+                    tocUrl: 'toc.json?v=10',
+                    disableOutline: true
+                });
+            }, 500); // Espera medio segundo a que el PDF cargue antes de forzar nuestro menú
         });
     </script>
 </body>
